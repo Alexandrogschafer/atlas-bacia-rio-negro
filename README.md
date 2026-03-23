@@ -14,6 +14,13 @@ Ou diretamente pelo arquivo em PDF disponível neste repositório.
 
 O atlas apresenta mapas, análises e informações temáticas relacionadas à Bacia Hidrográfica do Rio Negro, organizadas com finalidade de divulgação técnico-científica, apoio a estudos regionais e consulta pública.
 
+## Versão da publicação
+
+Versão: v1.0  
+Data de publicação: 23 mar. 2026  
+Tipo: Primeira edição digital
+
+
 ## Estrutura do repositório
 
 ```text
