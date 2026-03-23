@@ -3,55 +3,222 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atlas da Bacia Hidrográfica do Rio Negro (RS)</title>
+  <title>Atlas da Bacia Hidrográfica do Rio Negro</title>
   <style>
+    :root {
+      --azul-escuro: #1f4e79;
+      --azul-medio: #2f6fa3;
+      --azul-claro: #eaf3fb;
+      --texto: #222222;
+      --cinza: #6b7280;
+      --fundo: #f8fafc;
+      --branco: #ffffff;
+      --borda: #dbe4ee;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--fundo);
+      color: var(--texto);
       line-height: 1.6;
-      color: #222;
     }
+
+    header {
+      background: linear-gradient(135deg, var(--azul-escuro), var(--azul-medio));
+      color: white;
+      padding: 56px 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .cabecalho-conteudo {
+      max-width: 760px;
+    }
+
     h1 {
-      color: #1f4e79;
+      margin: 0 0 12px 0;
+      font-size: 2.2rem;
     }
+
+    .subtitulo {
+      margin: 0;
+      font-size: 1.05rem;
+      opacity: 0.95;
+    }
+
+    main {
+      padding: 32px 20px 48px 20px;
+    }
+
+    .card {
+      background: var(--branco);
+      border: 1px solid var(--borda);
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--azul-escuro);
+      font-size: 1.4rem;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+
+    .acoes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
     .botao {
       display: inline-block;
-      margin-right: 12px;
-      margin-top: 10px;
       padding: 12px 18px;
-      background: #1f6feb;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-    .botao:hover {
-      opacity: 0.9;
-    }
-    .caixa {
-      background: #f7f7f7;
-      padding: 20px;
       border-radius: 10px;
-      margin-top: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .botao-principal {
+      background: var(--azul-escuro);
+      color: white;
+    }
+
+    .botao-secundario {
+      background: var(--azul-claro);
+      color: var(--azul-escuro);
+      border: 1px solid #c7dcef;
+    }
+
+    .botao:hover {
+      transform: translateY(-1px);
+      opacity: 0.96;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .info-box {
+      background: #f9fbfd;
+      border: 1px solid var(--borda);
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .rotulo {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--cinza);
+      margin-bottom: 6px;
+    }
+
+    .valor {
+      font-weight: bold;
+      color: var(--azul-escuro);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--cinza);
+      font-size: 0.95rem;
+      padding: 12px 20px 32px 20px;
+    }
+
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .card {
+        padding: 22px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Atlas da Bacia Hidrográfica do Rio Negro (RS)</h1>
+  <header>
+    <div class="container cabecalho-conteudo">
+      <h1>Atlas da Bacia Hidrográfica do Rio Negro</h1>
+      <p class="subtitulo">
+        Publicação digital com mapas, análises e informações temáticas sobre a Bacia Hidrográfica do Rio Negro.
+      </p>
+    </div>
+  </header>
 
-  <div class="caixa">
-    <p>
-      Este atlas reúne mapas, análises e informações temáticas sobre a Bacia Hidrográfica do Rio Negro (RS),
-      com o objetivo de apoiar a compreensão de suas características territoriais, ambientais e hidrológicas.
-    </p>
+  <main>
+    <div class="container">
+      <section class="card">
+        <h2>Sobre a publicação</h2>
+        <p>
+          Este atlas foi elaborado com o objetivo de reunir e apresentar, de forma sistematizada, informações cartográficas,
+          ambientais, hidrológicas e territoriais da Bacia Hidrográfica do Rio Negro.
+        </p>
+        <p>
+          O material foi desenvolvido para fins de divulgação técnico-científica, apoio a estudos regionais e consulta pública,
+          servindo como instrumento de referência para pesquisadores, estudantes, gestores e demais interessados no território da bacia.
+        </p>
 
-    <p>
-      A publicação foi desenvolvida para fins de divulgação técnico-científica e consulta pública.
-    </p>
+        <div class="acoes">
+          <a class="botao botao-principal" href="atlas_bacianegro_2026_R2.pdf" target="_blank">Abrir atlas em PDF</a>
+          <a class="botao botao-secundario" href="atlas_bacianegro_2026_R2.pdf" download>Baixar PDF</a>
+        </div>
+      </section>
 
-    <a class="botao" href="atlas_bacianegro_2026_R2.pdf" target="_blank">Abrir atlas</a>
-    <a class="botao" href="atlas_bacianegro_2026_R2.pdf" download>Baixar atlas</a>
-  </div>
+      <section class="card">
+        <h2>Informações gerais</h2>
+        <div class="info-grid">
+          <div class="info-box">
+            <span class="rotulo">Formato</span>
+            <span class="valor">PDF</span>
+          </div>
+          <div class="info-box">
+            <span class="rotulo">Disponibilização</span>
+            <span class="valor">GitHub Pages</span>
+          </div>
+          <div class="info-box">
+            <span class="rotulo">Tema</span>
+            <span class="valor">Bacia Hidrográfica do Rio Negro</span>
+          </div>
+          <div class="info-box">
+            <span class="rotulo">Finalidade</span>
+            <span class="valor">Divulgação técnico-científica</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Citação e uso</h2>
+        <p>
+          Em caso de utilização deste material em trabalhos acadêmicos, relatórios ou apresentações, recomenda-se citar o atlas
+          de acordo com os dados autorais e editoriais informados no próprio documento.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    Página de divulgação do Atlas da Bacia Hidrográfica do Rio Negro.
+  </footer>
 </body>
 </html>
+
+
