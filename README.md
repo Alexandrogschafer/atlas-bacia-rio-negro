@@ -6,9 +6,7 @@ Este repositório reúne a versão digital do **Atlas da Bacia Hidrográfica do 
 
 O atlas pode ser acessado diretamente pela página do projeto:
 
-[Visualizar a página do atlas](https://alexandrogschafer.github.io/atlas-rio-negro/)
-
-Ou diretamente pelo arquivo em PDF disponível neste repositório.
+[Visualizar a página do atlas](https://alexandrogschafer.github.io/atlas-bacia-rio-negro/)
 
 ## Sobre a publicação
 
@@ -18,17 +16,20 @@ O atlas apresenta mapas, análises e informações temáticas relacionadas à Ba
 
 Versão: v1.0.1  
 Data de publicação: 23 mar. 2026  
-Tipo: Primeira edição digital
+Release: https://github.com/Alexandrogschafer/atlas-bacia-rio-negro/releases/tag/v1.0.1
 
 ## DOI
 
-https://doi.org/10.5281/zenodo.19197067
+DOI da versão: https://doi.org/10.5281/zenodo.19197067
 
+## Como citar
+
+SCHAFER, Alexandro Gularte. *Atlas da Bacia Hidrográfica do Rio Negro*. Bagé, RS: Edição do autor, 2026. Versão v1.0.1. Disponível em: https://alexandrogschafer.github.io/atlas-bacia-rio-negro/. DOI: https://doi.org/10.5281/zenodo.19197067
 
 ## Estrutura do repositório
 
 ```text
 .
 ├── index.html
-├── atlas_rio_negro.pdf
+├── atlas_bacia_hidrografica_rio_negro_v1.0.pdf
 └── README.md
