@@ -16,9 +16,13 @@ O atlas apresenta mapas, análises e informações temáticas relacionadas à Ba
 
 ## Versão da publicação
 
-Versão: v1.0  
+Versão: v1.0.1  
 Data de publicação: 23 mar. 2026  
 Tipo: Primeira edição digital
+
+## DOI
+
+https://doi.org/10.5281/zenodo.19197067
 
 
 ## Estrutura do repositório
